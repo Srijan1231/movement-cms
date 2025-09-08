@@ -37,12 +37,6 @@
     "guidelines": {
       "type": "richtext",
       "required": false
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": ["upcoming", "ongoing", "completed"],
-      "default": "upcoming",
-      "required": false
     }
   }
 }
