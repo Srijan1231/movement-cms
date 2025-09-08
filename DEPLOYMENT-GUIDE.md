@@ -257,7 +257,7 @@ Your Strapi CMS is now deployed and ready to power your Movement website!
 - **Updates**: `/api/updates`
 - **Resources**: `/api/resources`
 - **Safety**: `/api/safety`
-- **Press Releases**: `/api/press-releases`
+- **Press Releases**: `/api/presses`
 
 ### Next Steps:
 

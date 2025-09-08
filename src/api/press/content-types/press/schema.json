@@ -2,8 +2,8 @@
   "kind": "collectionType",
   "collectionName": "press_releases",
   "info": {
-    "singularName": "press-release",
-    "pluralName": "press-releases",
+    "singularName": "press",
+    "pluralName": "presses",
     "displayName": "Press Release",
     "description": "Press releases and media materials"
   },

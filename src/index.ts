@@ -28,7 +28,7 @@ export default {
         "update",
         "resource",
         "safety",
-        "press-release",
+        "press",
       ];
 
       for (const contentType of contentTypes) {
