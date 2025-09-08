@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "protests",
+  "info": {
+    "singularName": "protest",
+    "pluralName": "protests",
+    "displayName": "Protest",
+    "description": "Protest events and demonstrations"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    },
+    "map_embed": {
+      "type": "text",
+      "required": false
+    },
+    "guidelines": {
+      "type": "richtext",
+      "required": false
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["upcoming", "ongoing", "completed"],
+      "default": "upcoming",
+      "required": true
+    }
+  }
+}
