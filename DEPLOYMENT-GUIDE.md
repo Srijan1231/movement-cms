@@ -13,12 +13,14 @@ This guide will walk you through deploying your Movement CMS to Strapi Cloud.
 ### Option A: Using GitHub CLI (Recommended)
 
 1. **Install GitHub CLI** (if not already installed):
+
    ```bash
    brew install gh  # macOS
    # or download from https://cli.github.com/
    ```
 
 2. **Login to GitHub**:
+
    ```bash
    gh auth login
    ```
@@ -65,6 +67,7 @@ This guide will walk you through deploying your Movement CMS to Strapi Cloud.
 After deployment, configure these environment variables in Strapi Cloud:
 
 ### Required Variables:
+
 ```env
 # Database (automatically provided by Strapi Cloud)
 DATABASE_HOST=your-db-host
@@ -82,6 +85,7 @@ TRANSFER_TOKEN_SALT=your-production-transfer-token-salt
 ```
 
 ### Generate Production Secrets:
+
 ```bash
 # Generate APP_KEYS (run this 4 times for 4 keys)
 node -e "console.log(require('crypto').randomBytes(16).toString('base64'))"
@@ -108,7 +112,7 @@ node -e "console.log(require('crypto').randomBytes(16).toString('base64'))"
    - Click on "Public" role
    - Enable "find" and "findOne" for all content types:
      - Protest
-     - Agenda  
+     - Agenda
      - Update
      - Resource
      - Safety
@@ -146,17 +150,20 @@ NEXT_PUBLIC_APP_URL=https://your-frontend-domain.com
 ### Quick Content Addition:
 
 **Protests:**
+
 - Title: "March for Justice"
 - Date: Future date
 - Location: "City Center"
 - Status: "upcoming"
 
 **Agendas:**
+
 - Title: "End Police Brutality"
 - Priority: 1
 - Icon: "🛡️"
 
 **Updates:**
+
 - Message: "Movement is growing strong!"
 - Urgent: false
 
@@ -200,16 +207,19 @@ If you're deploying your Next.js frontend to Vercel:
 ### Common Issues:
 
 1. **Build Failures**:
+
    - Check Node.js version compatibility
    - Ensure all dependencies are in package.json
    - Review build logs in Strapi Cloud dashboard
 
 2. **Permission Errors**:
+
    - Verify public permissions are set correctly
    - Check API token permissions
    - Ensure content is published (not draft)
 
 3. **CORS Issues**:
+
    - Add your frontend domain to CORS settings
    - Check environment variables
 
@@ -240,6 +250,7 @@ curl -H "Authorization: Bearer YOUR_TOKEN" \
 Your Strapi CMS is now deployed and ready to power your Movement website!
 
 ### Your API Endpoints:
+
 - **Base URL**: `https://your-project.strapiapp.com/api`
 - **Protests**: `/api/protests`
 - **Agendas**: `/api/agendas`
@@ -249,6 +260,7 @@ Your Strapi CMS is now deployed and ready to power your Movement website!
 - **Press Releases**: `/api/press-releases`
 
 ### Next Steps:
+
 1. Add real content through the admin panel
 2. Test all API endpoints
 3. Update your frontend with the new API URL
