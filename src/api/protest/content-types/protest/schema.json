@@ -41,7 +41,8 @@
     "status": {
       "type": "enumeration",
       "enum": ["upcoming", "ongoing", "completed"],
-      "default": "upcoming"
+      "default": "upcoming",
+      "required": false
     }
   }
 }
